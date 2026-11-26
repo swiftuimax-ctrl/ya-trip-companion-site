@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yaamava Casino Trip Companion — Privacy &amp; Support</title>
+<meta name="description" content="Privacy and support for Yaamava Casino Trip Companion, an independent trip planner for Southern California resorts. Everything stays on your phone.">
+<meta property="og:title" content="Yaamava Casino Trip Companion">
+<meta property="og:description" content="Privacy and support for Yaamava Casino Trip Companion, an independent resort trip planner. Everything stays on your phone.">
+<meta name="theme-color" content="#1F5E3B">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #F6FAF3;
+    --surface: #FFFFFF;
+    --mint: #E7F4E1;
+    --leaf: #3F8D57;
+    --deep: #1F5E3B;
+    --lime: #A8D86E;
+    --ink: #1D2A22;
+    --ink-soft: #5E6E63;
+    --line: #D7E7D0;
+    --coral: #EF8064;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 400 16px/1.65 "Lexend", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: var(--leaf); }
+  h1, h2, h3 { font-family: ui-serif, "New York", Georgia, "Times New Roman", serif; color: var(--deep); line-height: 1.2; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+
+  header.top {
+    position: sticky; top: 0; z-index: 10;
+    background: rgba(246, 250, 243, 0.88);
+    backdrop-filter: saturate(160%) blur(14px);
+    -webkit-backdrop-filter: saturate(160%) blur(14px);
+    border-bottom: 1px solid var(--line);
+  }
+  header.top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; height: 64px; }
+  .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--deep); font-weight: 600; font-size: 15px; }
+  .mark {
+    width: 32px; height: 32px; border-radius: 9px;
+    background: linear-gradient(135deg, var(--lime), var(--leaf));
+    display: grid; place-items: center;
+  }
+  nav { display: flex; gap: 22px; }
+  nav a { color: var(--ink-soft); text-decoration: none; font-size: 14px; font-weight: 500; }
+  nav a:hover { color: var(--deep); }
+
+  .hero { padding: 72px 0 56px; }
+  .hero h1 { font-size: clamp(34px, 6vw, 52px); margin: 0 0 16px; letter-spacing: -0.01em; }
+  .hero p.lead { font-size: 19px; color: var(--ink-soft); max-width: 600px; margin: 0 0 28px; font-weight: 300; }
+  .pills { display: flex; flex-wrap: wrap; gap: 10px; }
+  .pill { background: var(--mint); color: var(--deep); border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px; font-size: 13px; font-weight: 500; }
+
+  section { padding: 56px 0; border-top: 1px solid var(--line); scroll-margin-top: 72px; }
+  section h2 { font-size: 32px; margin: 0 0 8px; }
+  .kicker { text-transform: uppercase; letter-spacing: 0.12em; font-size: 12px; font-weight: 600; color: var(--leaf); margin: 0 0 6px; }
+  .sub { color: var(--ink-soft); margin: 0 0 32px; }
+
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 20px 22px; }
+  .card h3 { font-size: 19px; margin: 0 0 6px; }
+  .card p { margin: 0; color: var(--ink-soft); font-size: 15px; }
+
+  .summary { background: var(--deep); color: #EAF5E4; border-radius: 22px; padding: 26px 28px; margin-bottom: 36px; }
+  .summary h3 { color: #fff; margin: 0 0 12px; font-size: 21px; }
+  .summary ul { margin: 0; padding-left: 20px; }
+  .summary li { margin: 4px 0; }
+
+  .policy h3 { font-size: 21px; margin: 34px 0 8px; }
+  .policy p, .policy li { color: var(--ink); }
+  .policy ul { padding-left: 20px; }
+  .policy li { margin: 6px 0; }
+  .muted { color: var(--ink-soft); font-size: 14px; }
+
+  details { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 16px 20px; margin-bottom: 10px; }
+  details[open] { border-color: var(--leaf); }
+  summary { cursor: pointer; font-weight: 500; color: var(--deep); list-style: none; display: flex; justify-content: space-between; gap: 16px; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; color: var(--leaf); font-weight: 600; }
+  details[open] summary::after { content: "–"; }
+  details p { margin: 10px 0 0; color: var(--ink-soft); }
+
+  .contact { margin-top: 28px; background: var(--mint); border: 1px solid var(--line); border-radius: 22px; padding: 26px 28px; }
+  .contact h3 { margin: 0 0 6px; font-size: 21px; }
+  .contact .email { font-size: 18px; font-weight: 500; word-break: break-all; }
+  .btns { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+  .btn { display: inline-block; border-radius: 12px; padding: 10px 18px; font: 500 15px "Lexend", sans-serif; text-decoration: none; cursor: pointer; border: 1px solid var(--leaf); }
+  .btn.primary { background: var(--leaf); color: #fff; }
+  .btn.ghost { background: transparent; color: var(--deep); }
+
+  .help { margin-top: 18px; font-size: 14px; color: var(--ink-soft); }
+
+  footer { border-top: 1px solid var(--line); padding: 32px 0 48px; color: var(--ink-soft); font-size: 13px; }
+  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
+  footer a { color: var(--ink-soft); }
+
+  @media (max-width: 560px) {
+    nav { gap: 14px; }
+    nav a.hide-sm { display: none; }
+    .hero { padding: 48px 0 40px; }
+  }
+</style>
+</head>
+<body id="top">
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top">
+      <span class="mark" aria-hidden="true">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 21V11M12 11C12 7 8 5 4 6c2 1 4 3 8 5Zm0 0c0-4 4-6 8-5-2 1-4 3-8 5Zm0 0c-2-3-1-7 2-8-1 2-1 5-2 8Z" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      Yaamava Casino Trip Companion
+    </a>
+    <nav>
+      <a class="hide-sm" href="#app">The app</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#support">Support</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="hero wrap">
+    <p class="kicker">iPhone &amp; iPad · iOS 17+</p>
+    <h1>Plan resort trips.<br>Keep it all on your phone.</h1>
+    <p class="lead">An independent trip companion for Southern California resorts: compare them, plan a road trip, keep a visit journal and carry your cards. No account, no tracking.</p>
+    <div class="pills">
+      <span class="pill">No account</span>
+      <span class="pill">No tracking</span>
+      <span class="pill">No ads</span>
+      <span class="pill">No gambling</span>
+    </div>
+  </div>
+
+  <section id="app">
+    <div class="wrap">
+      <p class="kicker">The app</p>
+      <h2>What it does</h2>
+      <p class="sub">Everything you need for a resort getaway, nothing you don't.</p>
+      <div class="grid">
+        <div class="card"><h3>Resort guide</h3><p>Five Southern California resorts with addresses, phone numbers, amenities, sunrise and sunset times, and drive time from where you are.</p></div>
+        <div class="card"><h3>Compare &amp; match</h3><p>Pick what you care about (spa, pool, golf, shows, dining) and see which resort fits best side by side.</p></div>
+        <div class="card"><h3>Road-trip planner</h3><p>Chain resorts into a trip, set nights per stop, add notes and send it to your calendar with one tap.</p></div>
+        <div class="card"><h3>Visit journal</h3><p>Rate each visit, tag it and keep notes. Optionally log what you spent and set a monthly budget.</p></div>
+        <div class="card"><h3>Card wallet</h3><p>Scan loyalty cards, show tickets or parking stubs and the app redraws the barcode so it's ready at the door.</p></div>
+        <div class="card"><h3>Play responsibly</h3><p>A break timer and a spending limit, plus quick links to 1-800-GAMBLER and the National Council on Problem Gambling.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="privacy">
+    <div class="wrap policy">
+      <p class="kicker">Privacy</p>
+      <h2>Privacy Policy</h2>
+      <p class="muted">Effective November 26, 2026</p>
+
+      <div class="summary">
+        <h3>The short version</h3>
+        <ul>
+          <li>We do not collect any personal data. We have no servers and no accounts.</li>
+          <li>Everything you add stays on your device.</li>
+          <li>No analytics, no advertising, no tracking, no third-party SDKs.</li>
+          <li>Deleting the app, or tapping <em>Erase all my data</em> in Settings, removes it all.</li>
+        </ul>
+      </div>
+
+      <p>This policy explains how Yaamava Casino Trip Companion ("the app") handles information. The app was built to work without collecting anything about you.</p>
+
+      <h3>Information we collect</h3>
+      <p>None. The app does not ask you to create an account or sign in, and does not ask for your email, phone number or password. The developer receives no data from the app.</p>
+
+      <h3>Information stored on your device</h3>
+      <p>Whatever you choose to enter stays in the app's private storage on your iPhone or iPad:</p>
+      <ul>
+        <li>Favorite resorts and the interests you pick during setup</li>
+        <li>Trips you plan, with their names, dates, stops and notes</li>
+        <li>Journal entries: ratings, tags, notes, and the optional amounts you spent and your monthly budget</li>
+        <li>Cards and codes you scan or type in, including any name, phone, email or note you add to your own QR code</li>
+        <li>Break-timer and spending-limit settings</li>
+      </ul>
+      <p>None of this is sent to us or anyone else. It is protected by iOS file encryption and is included in your device backups (iCloud or computer) according to your own backup settings.</p>
+
+      <h3>Permissions</h3>
+      <ul>
+        <li><strong>Location (while using the app).</strong> Used only to show how far each resort is and how long the drive takes. Your location is never stored by the app. To calculate drive times, the starting point is sent to Apple Maps, under <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple's privacy policy</a>.</li>
+        <li><strong>Camera.</strong> Used only to read the barcode or QR code on a card or ticket you choose to scan. No photos or video are saved or sent anywhere.</li>
+        <li><strong>Calendar (add only).</strong> Used only when you tap <em>Add to Calendar</em> to add a trip. The app cannot read your existing events.</li>
+        <li><strong>Notifications.</strong> Used only for the break-timer reminder you start yourself. Notifications are scheduled on your device; no push server is involved.</li>
+      </ul>
+      <p>Each permission is optional. You can change it at any time in iOS Settings, and the rest of the app keeps working.</p>
+
+      <h3>Sharing</h3>
+      <p>The app only shares something when you tap Share or Copy. The text or image goes through the standard iOS share sheet or clipboard to the destination you pick. Calls, directions and website links open the resort's own phone line, Apple Maps or the resort's website, which follow their own privacy policies.</p>
+
+      <h3>Tracking, analytics and advertising</h3>
+      <p>The app does not track you across apps or websites, contains no advertising, and uses no analytics or crash-reporting services.</p>
+
+      <h3>Children</h3>
+      <p>The app is not directed at children and is intended for adults planning resort travel. It does not knowingly collect information from anyone, including children.</p>
+
+      <h3>Deleting your data</h3>
+      <p>Open Settings in the app and tap <em>Erase all my data</em>, or delete the app. Because we hold no copy, there is nothing to request from us.</p>
+
+      <h3>Changes to this policy</h3>
+      <p>If the way the app handles information changes, this page will be updated and the effective date above will change.</p>
+
+      <h3>Independence</h3>
+      <p>Yaamava Casino Trip Companion is an independent travel guide. It is not affiliated with, endorsed by or sponsored by any of the resorts listed, their owners or any tribal nation. Resort names are used only to identify the places described. The app does not offer gambling of any kind.</p>
+
+      <h3>Contact</h3>
+      <p>Questions about privacy: <a class="mail" href="mailto:dev135784@icloud.com">dev135784@icloud.com</a></p>
+    </div>
+  </section>
+
+  <section id="support">
+    <div class="wrap">
+      <p class="kicker">Support</p>
+      <h2>Help &amp; questions</h2>
+      <p class="sub">Answers to the most common questions. If yours isn't here, write to us.</p>
+
+      <details>
+        <summary>Do I need an account?</summary>
+        <p>No. Open the app and start planning. There is no sign-in, and everything you add stays on your device.</p>
+      </details>
+      <details>
+        <summary>Why doesn't drive time show up?</summary>
+        <p>Drive time needs location access and an internet connection. Check Settings → Privacy &amp; Security → Location Services → Yaamava Casino Trip Companion and choose <em>While Using the App</em>. Everything else works offline.</p>
+      </details>
+      <details>
+        <summary>A card won't scan. What can I do?</summary>
+        <p>Hold the code flat, fill most of the frame and turn on the torch in a dark room. If it still won't read, add the card by typing its number. The app redraws the barcode from the number.</p>
+      </details>
+      <details>
+        <summary>How do I add a trip to my calendar?</summary>
+        <p>Open the trip in Plan and tap <em>Add to Calendar</em>. The first time, iOS asks for permission to add events. The app can only add, never read, your calendar.</p>
+      </details>
+      <details>
+        <summary>Will my data move to a new iPhone?</summary>
+        <p>Yes, if you restore your new iPhone from an iCloud or computer backup of the old one. The app has no cloud account of its own.</p>
+      </details>
+      <details>
+        <summary>How do I delete everything?</summary>
+        <p>Settings in the app → <em>Erase all my data</em>. This can't be undone.</p>
+      </details>
+      <details>
+        <summary>Can I gamble or book rooms in the app?</summary>
+        <p>No. The app is a planner and journal only. Calls and links go straight to each resort's own phone line and website.</p>
+      </details>
+
+      <div class="contact">
+        <h3>Contact support</h3>
+        <div class="email"><a class="mail" href="mailto:dev135784@icloud.com">dev135784@icloud.com</a></div>
+        <div class="btns">
+          <a class="btn primary mail-btn" href="mailto:dev135784@icloud.com?subject=Yaamava%20Casino%20Trip%20Companion%20support">Email support</a>
+          <button class="btn ghost" type="button" id="copy">Copy address</button>
+        </div>
+      </div>
+
+      <p class="help">Gambling problem? Call <a href="tel:18004262537">1-800-GAMBLER</a> or visit <a href="https://www.ncpgambling.org" rel="noopener">ncpgambling.org</a>.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Yaamava Casino Trip Companion. Independent guide, not affiliated with any resort.</span>
+    <span><a href="#privacy">Privacy</a> · <a href="#support">Support</a></span>
+  </div>
+</footer>
+
+<script>
+  const EMAIL = "dev135784@icloud.com";
+  const subject = encodeURIComponent("Yaamava Casino Trip Companion support");
+  document.querySelectorAll("a.mail").forEach(a => { a.textContent = EMAIL; a.href = "mailto:" + EMAIL; });
+  document.querySelectorAll("a.mail-btn").forEach(a => { a.href = "mailto:" + EMAIL + "?subject=" + subject; });
+  const copy = document.getElementById("copy");
+  copy.addEventListener("click", async () => {
+    try { await navigator.clipboard.writeText(EMAIL); copy.textContent = "Copied"; }
+    catch (e) { copy.textContent = EMAIL; }
+    setTimeout(() => { copy.textContent = "Copy address"; }, 1800);
+  });
+</script>
+</body>
+</html>
